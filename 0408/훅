@@ -1,0 +1,22 @@
+훅(Hook)이란?
+React 16.8부터 도입된 기능으로, 클래스형 컴포넌트 없이도 상태 관리와 생명주기 관련 기능을 사용할 수 있도록 해줌.
+
+자주 사용하는 기본 훅들
+훅 이름	설명
+useState	컴포넌트에서 상태 값을 사용하게 해줌
+useEffect	컴포넌트의 생명주기 함수처럼 동작 (componentDidMount, componentDidUpdate, componentWillUnmount 등)
+useRef	DOM에 직접 접근하거나, 변수를 상태처럼 저장하고 싶을 때 사용
+useContext	Context API를 사용할 때 사용
+useReducer	useState보다 복잡한 상태 로직을 관리할 때 사용
+useMemo	계산된 값을 메모이제이션해서 성능 최적화
+useCallback	함수를 메모이제이션해서 불필요한 렌더링 방지
+
+훅의 규칙 (Rules of Hooks)
+반드시 최상위에서 호출해야 함
+→ 조건문, 반복문, 함수 내부에서 호출하면 안 됨
+
+React 함수형 컴포넌트 또는 커스텀 훅 안에서만 사용
+
+커스텀 훅이란?
+React 기본 훅들을 조합해서 자신만의 훅을 만드는 것.
+이름은 꼭 use로 시작해야 함.
