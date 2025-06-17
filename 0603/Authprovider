@@ -1,0 +1,13 @@
+import React from "react";
+import { AuthProvider } from "./AuthContext";
+import Navbar from "./Navbar";
+import LoginForm from "./LoginForm";
+function App() {
+return (
+<AuthProvider>
+<Navbar />
+<LoginForm />
+</AuthProvider>
+);
+}
+export default App
